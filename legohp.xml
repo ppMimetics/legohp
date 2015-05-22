@@ -81,33 +81,13 @@
                               </block>
                             </value>
                             <next>
-                              <block type="led_select" id="287" inline="true">
+                              <block type="led_select" id="447" inline="true">
                                 <field name="ACTION">FLASH</field>
                                 <value name="LED">
-                                  <block type="math_number" id="318">
-                                    <field name="NUM">2</field>
+                                  <block type="math_number" id="457">
+                                    <field name="NUM">3</field>
                                   </block>
                                 </value>
-                                <next>
-                                  <block type="led_select" id="353" inline="true">
-                                    <field name="ACTION">FLASH</field>
-                                    <value name="LED">
-                                      <block type="math_number" id="369">
-                                        <field name="NUM">3</field>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block type="led_select" id="362" inline="true">
-                                        <field name="ACTION">FLASH</field>
-                                        <value name="LED">
-                                          <block type="math_number" id="376">
-                                            <field name="NUM">4</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </next>
                               </block>
                             </next>
                           </block>
