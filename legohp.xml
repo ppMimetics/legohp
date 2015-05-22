@@ -1,5 +1,11 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="17" inline="false" x="76" y="67">
+  <block type="led_select" id="302" inline="true" x="576" y="-83">
+    <field name="ACTION">ON</field>
+    <next>
+      <block type="movement_stop" id="184"></block>
+    </next>
+  </block>
+  <block type="controls_whileUntil" id="17" inline="false" x="78" y="81">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="25">
@@ -54,9 +60,6 @@
                                 <field name="NUM">100</field>
                               </block>
                             </value>
-                            <next>
-                              <block type="movement_stop" id="184"></block>
-                            </next>
                           </block>
                         </next>
                       </block>
@@ -77,6 +80,36 @@
                                 <field name="NUM">1</field>
                               </block>
                             </value>
+                            <next>
+                              <block type="led_select" id="287" inline="true">
+                                <field name="ACTION">ON</field>
+                                <value name="LED">
+                                  <block type="math_number" id="318">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="led_select" id="311" inline="true">
+                                    <field name="ACTION">ON</field>
+                                    <value name="LED">
+                                      <block type="math_number" id="325">
+                                        <field name="NUM">3</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="led_select" id="334" inline="true">
+                                        <field name="ACTION">ON</field>
+                                        <value name="LED">
+                                          <block type="math_number" id="344">
+                                            <field name="NUM">4</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
@@ -101,5 +134,8 @@
     <next>
       <block type="movement_stop" id="187"></block>
     </next>
+  </block>
+  <block type="led_select" id="278" inline="true" x="140" y="189">
+    <field name="ACTION">ON</field>
   </block>
 </xml>
