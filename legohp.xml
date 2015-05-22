@@ -52,16 +52,39 @@
                       </block>
                     </value>
                     <statement name="DO0">
-                      <block type="movement_forward" id="83">
-                        <next>
-                          <block type="robot_delay" id="167" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="174">
-                                <field name="NUM">100</field>
+                      <block type="controls_if" id="471" inline="false">
+                        <mutation else="1"></mutation>
+                        <value name="IF0">
+                          <block type="logic_compare" id="472" inline="true">
+                            <field name="OP">GT</field>
+                            <value name="A">
+                              <block type="sensor_object" id="481">
+                                <field name="OBJECT">LEFTFRONT</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="474">
+                                <field name="NUM">80</field>
                               </block>
                             </value>
                           </block>
-                        </next>
+                        </value>
+                        <statement name="DO0">
+                          <block type="movement_left" id="541"></block>
+                        </statement>
+                        <statement name="ELSE">
+                          <block type="movement_forward" id="83">
+                            <next>
+                              <block type="robot_delay" id="167" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="174">
+                                    <field name="NUM">100</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
                       </block>
                     </statement>
                     <statement name="ELSE">
