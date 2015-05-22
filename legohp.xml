@@ -1,11 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="led_select" id="302" inline="true" x="576" y="-83">
-    <field name="ACTION">ON</field>
-    <next>
-      <block type="movement_stop" id="184"></block>
-    </next>
-  </block>
-  <block type="controls_whileUntil" id="17" inline="false" x="-52" y="87">
+  <block type="controls_whileUntil" id="17" inline="false" x="139" y="-79">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="25">
