@@ -5,7 +5,7 @@
       <block type="movement_stop" id="184"></block>
     </next>
   </block>
-  <block type="controls_whileUntil" id="17" inline="false" x="78" y="81">
+  <block type="controls_whileUntil" id="17" inline="false" x="-52" y="87">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="25">
@@ -100,6 +100,66 @@
                         </next>
                       </block>
                     </statement>
+                    <statement name="ELSE">
+                      <block type="led_select" id="278" inline="true">
+                        <field name="ACTION">ON</field>
+                        <value name="LED">
+                          <block type="math_number" id="567">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="led_select" id="568" inline="true">
+                            <field name="ACTION">ON</field>
+                            <value name="LED">
+                              <block type="math_number" id="569">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="led_select" id="570" inline="true">
+                                <field name="ACTION">ON</field>
+                                <value name="LED">
+                                  <block type="math_number" id="571">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="led_select" id="572" inline="true">
+                                    <field name="ACTION">ON</field>
+                                    <value name="LED">
+                                      <block type="math_number" id="573">
+                                        <field name="NUM">3</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="led_select" id="574" inline="true">
+                                        <field name="ACTION">ON</field>
+                                        <value name="LED">
+                                          <block type="math_number" id="575">
+                                            <field name="NUM">4</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="led_select" id="576" inline="true">
+                                            <field name="ACTION">ON</field>
+                                            <value name="LED">
+                                              <block type="math_number" id="577">
+                                                <field name="NUM">5</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
                     <next>
                       <block type="robot_delay" id="185" inline="true">
                         <value name="DELAY">
@@ -120,8 +180,5 @@
     <next>
       <block type="movement_stop" id="187"></block>
     </next>
-  </block>
-  <block type="led_select" id="278" inline="true" x="140" y="189">
-    <field name="ACTION">ON</field>
   </block>
 </xml>
